@@ -6,7 +6,7 @@ public class EolympTask {
     public static void main(String[] args) {
         //taskOne();
         //taskToo();
-        taskThree();
+        //taskThree();
     }
 
     private static void taskThree() {

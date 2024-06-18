@@ -9,7 +9,7 @@ public class EolypmTask {
         //taskThree();
         //taskFour();
         //taskFive();
-        taskSix();
+        //taskSix();
     }
 
     private static void taskSix() {
