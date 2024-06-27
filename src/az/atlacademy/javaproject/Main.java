@@ -22,7 +22,7 @@ public class Main {
         if (teacher.getRole().equals("teacher")){
             teacherInfo(teacher,student,course);
         }
-
+        sc.close();
     }
 
     private static void teacherInfo(Teacher teacher,Student student ,Course course) {
