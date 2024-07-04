@@ -17,8 +17,8 @@ public class EolympTask {
         //taskEleven();
         //taskTwelve();
         //taskThirteen();
-        //taskFourteen();
-        taskFifteen();
+        taskFourteen();
+        //taskFifteen();
     }
 
     private static void taskFifteen() {

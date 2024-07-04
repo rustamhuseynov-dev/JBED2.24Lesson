@@ -1,21 +1,21 @@
 package az.atlacademy.lesson12.ooptask;
 
 public class Human {
-    String name;
+    private String name;
 
-    String surname;
+    private String surname;
 
-    int year;
+    private int year;
 
-    int iq;
+    private int iq;
 
-    Pet pet;
+    private Pet pet;
 
-    Human mother;
+    private Human mother;
 
-    Human father;
+    private Human father;
 
-    String[][] schedule;
+    private String[][] schedule;
 
     public Human(String name, String surname, int year, int iq, Pet pet, Human mother, Human father, String[][] schedule) {
         this.name = name;
@@ -49,12 +49,12 @@ public class Human {
 
 
     public void greetPet(){
-        System.out.println("Hello " + getPet().nickname);
+        System.out.println("Hello " + getPet().getNickname());
     }
 
     public void describePet(){
-        System.out.println("I have a " + getPet().species + ", he is " + getPet().age + ", he is " +
-                (getPet().trickLevel > 50 ? "very sly" : "almost not sly")
+        System.out.println("I have a " + getPet().getSpecies() + ", he is " + getPet().getAge() + ", he is " +
+                (getPet().getTrickLevel() > 50 ? "very sly" : "almost not sly")
                 );
     }
 
@@ -151,5 +151,13 @@ public class Human {
 
     public void setFather(Human father) {
         this.father = father;
+    }
+
+    public String[][] getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String[][] schedule) {
+        this.schedule = schedule;
     }
 }

@@ -1,15 +1,15 @@
 package az.atlacademy.lesson12.ooptask;
 
 public class Pet {
-    String species;
+    private String species;
 
-    String nickname;
+    private String nickname;
 
-    int age;
+    private int age;
 
-    int trickLevel;
+    private int trickLevel;
 
-    String habits;
+    private String habits;
 
     public Pet(String species, String nickname){
         this.species = species;
