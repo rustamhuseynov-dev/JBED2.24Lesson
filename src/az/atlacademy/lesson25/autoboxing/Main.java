@@ -14,5 +14,6 @@ public class Main {
 
         int result = num + primNum; //auto - unBoxing hadisəsi burda baş verir İnteger dəyər primitive dəyər ilə toplanır
         System.out.println(result);
+
     }
 }
