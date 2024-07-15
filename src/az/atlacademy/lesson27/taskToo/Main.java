@@ -38,16 +38,12 @@ public class Main {
         studentList.add(new Student("Nicat",25,99));
         studentList.add(new Student("Rasim",30,88));
         studentList.add(new Student("Elsen",23,88));
-        Collections.sort(studentList, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
-                if (o1.getGrade()==o2.getGrade()){
-                    return o1.getAge()-o2.getAge();
-                }
-                return o1.getAge() - o2.getAge();
+        Collections.sort(studentList, (o1, o2) -> {
+            if (o1.getGrade()==o2.getGrade()){
+                return o1.getAge()-o2.getAge();
             }
+            return o1.getAge() - o2.getAge();
         });
-
         System.out.println("\nSort by Grade (desc) and Age (asc):");
         for (Student student : studentList) {
             System.out.println(student);
