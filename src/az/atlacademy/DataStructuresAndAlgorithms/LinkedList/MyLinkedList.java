@@ -35,14 +35,6 @@ public class MyLinkedList<E> {
         if (head == null){
             throw new NullPointerException();
         }
-        MyNode<E> next = head.getNext();
-        for (int i = 0; i < next.getSize(); i++) {
-            if (next != null){
-                head.setNext(next);
-            }
-        }
-
-
     }
 
     @Override
