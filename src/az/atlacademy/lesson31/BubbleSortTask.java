@@ -11,6 +11,7 @@ public class BubbleSortTask {
                     numbers[j + 1] = temp;
                 }
             }
+            System.out.println(numbers[i]);
         }
 
         for (int i = 0; i < numbers.length; i++) {
