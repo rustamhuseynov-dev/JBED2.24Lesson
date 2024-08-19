@@ -1,5 +1,9 @@
 package az.atlacademy.lesson7.equalsAndHashcode;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
         Money income = new Money(55,"USD");
@@ -19,7 +23,7 @@ public class Main {
         Money m = new Money(11,"s");
         m = new Money(11,"ela");
         System.out.println(m.currencyCode);
-        //ilk novbede verdiyimiz m referansi Garbage Collection terefinden silinir
+        //ilk novbede verdiyimiz m referansin obyekti Garbage Collection terefinden silinir
         //ikinci m = new Moner() yeni obyekt olur
 
     }
