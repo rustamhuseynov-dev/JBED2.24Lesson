@@ -1,13 +1,15 @@
 package az.atlacademy.lesson36.createArrayList;
 
+import java.text.DecimalFormat;
+
 public class Main {
     public static void main(String[] args) {
-        MyArrayList<String> list = new MyArrayList<>();
-        list.add("Elnur");
-        list.add("Rustam");
-        list.add("Saleh");
-        list.add("Emil");
-        //list.printList();
-        System.out.println(list);
-    }
-}
+
+                double amount = 2100;
+                DecimalFormat decimalFormat = new DecimalFormat("#,###.00"); // 2,100.00 formatında
+
+                String formattedAmount = decimalFormat.format(amount);
+                System.out.println("Formatted Amount: " + formattedAmount);
+            }
+        }
+
